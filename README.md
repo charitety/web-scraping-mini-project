@@ -1,74 +1,45 @@
-# code
+[11:57 AM] Dhruv Thota
 
-## Summary
+Final (mini) Project
 
-Short summary on functionality and used technologies.
+Web scraping is the process of extracting and parsing data from websites in an automated fashion using a computer program. It's a useful technique for creating datasets for research and learning. Follow these steps to build a web scraping project from scratch using Python and its ecosystem of libraries:
 
-[picture of the solution in action, if possible]
+ 
 
-## Used SharePoint Framework Version
+Scope your target website and describe your objective
 
-![version](https://img.shields.io/badge/version-1.17.3-green.svg)
+Browse through https://www.consumeraffairs.com/
+Consumer affairs contains reviews about thousands of brands. Can you scrape any category from the site to create a dataset of Reviews containing information like Title, Rating, Reviews and toll-free number etc.?
+Identify the information you'd like to scrape from the site. Decide the format of the output CSV file.
+Summarize your project idea and outline your strategy in a ReadMe file.
 
-## Applies to
+Use the requests library to download web pages
 
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
+Inspect the website's HTML source and identify the right URLs to download.
+Download and save web pages locally using the requests library.
+Create a function to automate downloading for different topics/search queries.
 
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
+Use Beautiful Soup to parse and extract information
 
-## Prerequisites
+Parse and explore the structure of downloaded web pages using Beautiful soup.
+Between your group members, split the website into sections and scrape different data
+Use the right properties and methods to extract the required information.
+Create functions to extract from the page into lists and dictionaries.
+(Optional) Use a REST API to acquire additional information if required.
 
-> Any special pre-requisites?
+Create CSV file(s) with the extracted information
 
-## Solution
+Create functions for the end-to-end process of downloading, parsing, and saving CSVs.
+Execute the function with different inputs to create a dataset of CSV files.
+(Optional) Verify the information in the CSV files by reading them back using Pandas.
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+Document and share your work
 
-## Version history
+Add proper comments and documentation in your repository.
+(Optional) Write a blog post about your project and share it online.
 
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+ like 4
 
-## Disclaimer
+ConsumerAffairs®: Research. Review. Resolve.
 
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
-
----
-
-## Minimal Path to Awesome
-
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
-
-## References
-
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
-"# web-scraping-mini-project" 
+ConsumerAffairs.com: Knowledge is Power! Consumer news, reviews, complaints, resources, safety recalls
