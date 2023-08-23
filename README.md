@@ -1,10 +1,6 @@
-[11:57 AM] Dhruv Thota
-
 Final (mini) Project
 
 Web scraping is the process of extracting and parsing data from websites in an automated fashion using a computer program. It's a useful technique for creating datasets for research and learning. Follow these steps to build a web scraping project from scratch using Python and its ecosystem of libraries:
-
- 
 
 Scope your target website and describe your objective
 
@@ -37,9 +33,3 @@ Document and share your work
 
 Add proper comments and documentation in your repository.
 (Optional) Write a blog post about your project and share it online.
-
- like 4
-
-ConsumerAffairs®: Research. Review. Resolve.
-
-ConsumerAffairs.com: Knowledge is Power! Consumer news, reviews, complaints, resources, safety recalls
