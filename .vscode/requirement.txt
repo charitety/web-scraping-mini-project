@@ -1,0 +1,31 @@
+from bs4 import BeautifulSoup
+import requests
+
+def credit_repair():
+    purpose = []
+
+
+
+    url = 'https://www.consumeraffairs.com/finance/credit-repair/'
+    page_to_scrape = requests.get(url)
+    soup = BeautifulSoup(page_to_scrape.text, "html.parser")
+
+    reason = soup.findAll ("div", attrs={"id": "what-is-credit-repair"})
+
+    if reason:
+        h3_elements = reason.find_all("h3")
+
+        if h3_elements:
+            for h3 in h3_elements:
+                print(h3.get_text())
+
+
+
+
+
+
+
+
+
+
+    
