@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
 def test_crawler_fetch(self):
     crawler = WebCrawler()
-    response = crawler.fetch_url("https://www.example.com")
+    response = crawler.fetch_url("https://www.consumeraffairs.com/finance/auto-loans/#our-top-car-loan-picks")
     self.assertEqual(response.status_code, 200)
 
 def test_crawler_parse(self):
@@ -43,7 +43,7 @@ def test_crawler_parse(self):
 
 def test_crawler_integration(self):
     crawler = WebCrawler()
-    url = "https://www.example.com"
+    url = "https://www.consumeraffairs.com/finance/auto-loans/#our-top-car-loan-picks"
     content = crawler.fetch_url(url).content
     parsed_content = crawler.parse_content(content)
     self.assertIn("Example Domain", parsed_content)
