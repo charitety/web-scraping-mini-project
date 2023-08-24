@@ -41,9 +41,9 @@ for top_desc in top_pick_desc:
 
 # writer = csv.writer(file)
 
-    file = open('export_data.csv', 'a', newline='', encoding='utf-8')
+    file = open('export_names.csv', 'a', newline='', encoding='utf-8')
     writer = csv.writer(file)
-    headers = ([top_pick_names, top_pick_desc])
+    headers = ([top_pick_names])
     writer.writerow(headers)
     file.close()
 
@@ -51,7 +51,7 @@ for top_desc in top_pick_desc:
 
 
 
-data = pd.read_csv('export_data.csv')
+data = pd.read_csv('export_names.csv')
 data.head()
 
 
