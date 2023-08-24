@@ -52,7 +52,7 @@ for top_desc in top_pick_desc:
 
 
 data = pd.read_csv('export_names.csv')
-data.head()
+print(data.head())
 
 
 # top_pics = soup.findAll("strong", attrs={"class": "sngl-brnd-crd__nm"})
