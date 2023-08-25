@@ -5,7 +5,7 @@ import scraper
 
 class TestScraper(unittest.TestCase):
     @patch("scraper.requests.get")
-    def testScrapeConsumerAffairs(self, mockGet):
+    def test_ScrapeConsumerAffairs(self, mockGet):
         mockResponse = unittest.mock.Mock()
         mockResponse.text = """
         <html>
@@ -31,5 +31,8 @@ class TestScraper(unittest.TestCase):
         self.assertIn("Bank2", bankNames)
         self.assertIn("Bank3", bankNames)
 
-    if __name__ == "__main__":
-        unittest.main()
+if __name__ == "__main__":
+    unittest.main()
+
+
+
